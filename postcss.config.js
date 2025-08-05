@@ -1,8 +1,10 @@
-// postcss.config.js
-// Remove the Tailwind PostCSS plugin since we're using the Vite plugin
 export default {
   plugins: {
-    // You can add other PostCSS plugins here if needed
-    // autoprefixer: {},
+    '@tailwindcss/postcss': {
+      optimize: {
+        minify: false,   // <--- This disables minification, which is currently buggy only in the Vercel build context
+      },
+    },
+    autoprefixer: {},
   },
 }

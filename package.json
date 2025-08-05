@@ -13,7 +13,6 @@
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.6.1",
     "@react-three/fiber": "^9.3.0",
-    "@tailwindcss/cli": "^4.0.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/vite": "^4.1.11",
     "cobe": "^0.6.4",
@@ -39,8 +38,6 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "postcss": "^8.5.6",
-    "@tailwindcss/vite": "^4.0.0-alpha.35",
-    "tailwindcss": "^4.0.0-alpha.35",
     "vite": "^7.0.6"
   }
 }
