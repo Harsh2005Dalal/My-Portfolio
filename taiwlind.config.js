@@ -5,7 +5,8 @@ export default {
     extend: {},
   },
   plugins: [],
-  corePlugins:{
-    scrollBehaviour:true,
+  corePlugins: {
+    // Fixed typo: scrollBehavior (not scrollBehaviour)
+    scrollBehavior: true,
   }
 };
