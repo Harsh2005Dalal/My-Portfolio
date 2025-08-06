@@ -1,4 +1,4 @@
-import { img, p } from "framer-motion/client";
+import { img, p, ul } from "framer-motion/client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -28,9 +28,14 @@ const ProjectDetails = ({
         <div className="inset-0 bg-black/40 p-6 flex flex-col justify-end ">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
+            <ul>
           {subDescription.map((subDesc, index) => (
-            <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
-          ))}
+                <li>
+                  <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+                </li>
+
+))}
+</ul>
           <div className="flex items-center justify-between  mt-4">
             <div className="flex gap-3">
               {tags.map((tags, index) => (
@@ -45,6 +50,7 @@ const ProjectDetails = ({
             <div>
               <a
                 href={href}
+                target="_blank"
                 className="flex items-center gap-3 font-medium hover-animation cursor-pointer"
               >
                 View Project{" "}

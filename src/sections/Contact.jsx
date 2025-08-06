@@ -51,26 +51,26 @@ const Contact = () => {
       {showAlert && <Alert type={alertType} text={alertMessage}/>}
       <div className='flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary'>
       <div className='flex flex-col mb-10 items-start w-full gap-5'>
-        <h2 className='text-heading'>Lets Talk</h2>
+        <h2 className='md:text-4xl text-3xl font-bold'>Lets Talk</h2>
         <p className='font-normal text-neutral-400'>Looking for a new website, improve your current website, or just want to give feedback of my website, I'm here to listen and build</p>
       </div>
       <form action="" className='w-full' onSubmit={handleSubmit}>
         <div className='mb-5'>
-          <label htmlFor="name" className='field-label'>Full Name</label>
-          <input type="text" id="name" name="name" className='field-input field-input-focus' placeholder='Harsh Dalal' required autoComplete='name' value={formData.name} onChange = {handleChange}/>
+          <label htmlFor="name" className='text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'>Full Name</label>
+          <input type="text" id="name" name="name" className='w-full min-h-10 rounded-md px-3 py-2 text-sm bg-white/10 transition duration-200 placeholder-neutral-500 border border-white/10 mt-2; focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20; flex items-center pl-2' placeholder='Harsh Dalal' required autoComplete='name' value={formData.name} onChange = {handleChange}/>
         </div>
 
         <div className='mb-5'>
-          <label htmlFor="name" className='field-label'>Email</label>
-          <input type="email" id="email" name="email" className='field-input field-input-focus' placeholder='harsh2005dalal@gmail.com' required autoComplete='email' value={formData.email} onChange = {handleChange}/>
+          <label htmlFor="name" className='text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'>Email</label>
+          <input type="email" id="email" name="email" className='w-full min-h-10 rounded-md px-3 py-2 text-sm bg-white/10 transition duration-200 placeholder-neutral-500 border border-white/10 mt-2; focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20; pt-1 pl-2 flex items-center' placeholder='harsh2005dalal@gmail.com' required autoComplete='email' value={formData.email} onChange = {handleChange}/>
         </div>
 
         <div className='mb-5'>
-          <label htmlFor="message" className='field-label'>Message</label>
-          <textarea type="text" id="message" name="message" className='field-input field-input-focus' rows="4" placeholder='Wanna share something?...' required autoComplete='message' value={formData.message} onChange = {handleChange}/>
+          <label htmlFor="message" className='text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'>Message</label>
+          <textarea type="text" id="message" name="message" className='w-full min-h-10 rounded-md px-3 py-2 text-sm bg-white/10 transition duration-200 placeholder-neutral-500 border border-white/10 mt-2; focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20; pt-1 pl-2' rows="4" placeholder='Wanna share something?...' required autoComplete='message' value={formData.message} onChange = {handleChange}/>
         </div>
 
-        <button className='w-full px-1 py-3 text-lg text-center cursor-pointer rounded-md bg-radial from-lavender hover-animation border-none' type="submit">{isLoading ? "Sending..." : "Send"}</button>
+        <button className='w-full px-1 py-3 text-lg text-center cursor-pointer rounded-md bg-gradient-to-r from-transparent via-lavender to-transparent hover-animation border-none' type="submit">{isLoading ? "Sending..." : "Send"}</button>
       </form>
       </div>
     </section>

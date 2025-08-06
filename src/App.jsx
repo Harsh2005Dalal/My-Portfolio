@@ -24,9 +24,9 @@ const App = () => {
         <Projects/>
       </section>
 
-      <section id="experiences">
+      {/* <section id="experiences">
         <Experiences/> 
-      </section>
+      </section> */}
 
       <section id="testimonials">
         <Testimonials/>

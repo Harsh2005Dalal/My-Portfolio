@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { Marquee } from "../components/Marquee";
 import { reviews } from "../constants";
+import { div } from "framer-motion/client";
 
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -34,11 +35,11 @@ const ReviewCard = ({
 
 export default function Testimonials() {
   return (
-    <div className="items-start mt-25 md:mt-25 c-space">
+    <div className="items-start mt-24 md:mt-24 c-space">
       <h2 className="text-heading">Hear From My Clients</h2>
 
 
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden mt-12">
+    {/* <div className="relative flex w-full flex-col items-center justify-center overflow-hidden mt-12">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
@@ -51,7 +52,12 @@ export default function Testimonials() {
       </Marquee>
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-primary"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-primary"></div>
+    </div> */}
+
+<div>
+      <p className="flex items-center text-center text-4xl md:text-5xl font-bold justify-center pt-12">Coming Soon...</p>
     </div>
     </div>
   );
 }
+

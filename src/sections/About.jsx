@@ -9,65 +9,79 @@ const About = () => {
     const grid2Container = useRef();
   return (
    <section className='c-space section-spacing'>
-    <h2 className='text-heading'>About Me</h2>
+    <h2 className='text-heading text-3xl font-bold md:text-4xl'>About Me</h2>
     <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12'>
         {/* Grid-1 */}
         <div className='flex items-end grid-default-color grid-1'>
             <img src="assets/coding-pov.png" className='absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:lef-50 md:inset-y-10 lg:scale-[2.5]' alt="" />
             <div className='z-10'>
                 <p className='headtext'>Hi I'm Harsh Dalal</p>
-                <p className='subtext'>Over the last 1 year, I developed and frontend and backend skills, working on various projects, helping me to hone my skills even better to deliver dynamic and responsive webistes</p>
+                <p className='subtext'>A year of building and experimenting with diverse projects has helped me master both frontend and backend - crafting web experiences that are as dynamic as they are responsive.</p>
             </div>
         </div>
         {/* Grid-2 */}
         <div className="grid-default-color grid-2" ref={grid2Container}>
             <div className='flex items-center justify-center w-full h-full'>
-                <p className='flex items-end text-5xl text-gray-500'>CODE IS CRAFT</p>
+                <p className='flex items-end text-5xl text-gray-500'>FUN IN CODING</p>
                 <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="CREATE"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              text="BUILD"
               containerRef={grid2Container}
 
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
+              text="Tech Stack"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              text="Principles"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              text="React"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/cplusplus.png"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/html.png"
               containerRef={grid2Container}
               
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/tailwind.png"
+              containerRef={grid2Container}
+              
+            />
+
+<Card
+              style={{ rotate: "5deg", top: "6%", left: "80%" }}
+              image="assets/logos/mongodb.png"
+              containerRef={grid2Container}
+              
+            />
+
+<Card
+              style={{ rotate: "55deg", top: "40%", left: "50%" }}
+              image="assets/logos/python.png"
               containerRef={grid2Container}
               
             />

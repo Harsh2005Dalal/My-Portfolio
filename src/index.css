@@ -63,7 +63,7 @@ body {
   overflow-x: hidden;
 }
 
-@layer{
+@layer components {
 .c-space {
   @apply sm:px-10 px-5 lg:px-15;
 }
